@@ -36,7 +36,6 @@ public class Bullet : MonoBehaviour
         Player player = collision.GetComponent<Player>();
         if (player != null)
         {
-            Debug.Log("hit");
             Destroy(this.gameObject);
             player.GetDamage(1);
         }
